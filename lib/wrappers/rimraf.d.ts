@@ -1,9 +1,5 @@
-import * as pify from 'pify';
 import * as _rimraf from 'rimraf';
-
-// Define an alternate options interface because the d.ts has a mistake where the last 4 props are marked as
-// required properties rather than optional
-export const _options : _rimraf.Options = undefined;
+export declare const _options: _rimraf.Options;
 export interface Options {
     unlink?: typeof _options.unlink;
     chmod?: typeof _options.chmod;
@@ -22,9 +18,4 @@ export interface Options {
     glob?: typeof _options.glob;
     disableGlob?: boolean;
 }
-
-// wrap real 'rimraf' using an ES6 export so that it can be stubbed in tests
-const rimraf_p = pify(_rimraf);
-export default function rimraf(pattern: string, options?: Options): Promise<void> {
-    return rimraf_p(pattern, options);
-}
+export default function rimraf(pattern: string, options?: Options): Promise<void>;

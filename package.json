@@ -1,12 +1,13 @@
 {
   "name": "npm-git-publish",
-  "version": "0.2.4-beta",
+  "version": "0.2.4-betatemp",
   "description": "Dev tool to publish an NPM package to a remote Git repository, instead of a registry or CDN of tarballs",
   "main": "lib/publish",
   "typings": "lib/publish",
   "scripts": {
     "prepublish": "typings install && tsc",
-    "test": "tsc && mocha"
+    "test": "tsc && mocha",
+    "gitpub": "ts-node ./publish.ts"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "mocha": "^2.0.1",
     "sinon": "^1.13.0",
     "sinon-chai": "^2.8.0",
+    "ts-node": "3.3.0",
     "typescript": "^1.8.7",
     "typings": "^0.6.5"
   },
