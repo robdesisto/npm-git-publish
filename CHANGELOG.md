@@ -1,3 +1,17 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.2.6"></a>
+## [0.2.6](https://github.com/robdesisto/npm5-git-publish/compare/v0.2.4-beta...v0.2.6) (2018-01-16)
+
+
+### Bug Fixes
+
+* publishing fix from forked repo to npm ([c173d7c](https://github.com/robdesisto/npm5-git-publish/commit/c173d7c))
+
+
+
 # Changelog
 
 ## 0.2.4-beta
