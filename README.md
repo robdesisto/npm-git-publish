@@ -1,4 +1,13 @@
-# npm-git-publish [![Stories in Ready][board-badge]][waffle-board] [![Linux Build Status][travis-badge]][travis-dashboard]
+# npm-git-publish
+
+## Some History
+
+I didn't write this module. [Theo Yaung](https://github.com/theoy) was the brilliant auteur who did that. However, I 
+*was* dependent on it. NPM 5 introduced a breaking change to this module. [Christopher Scott](https://github.com/chaosfinity)
+forked it and submitted a PR, but the module seems to be orphaned. The pull request went un-pulled, the issues unfixed. 
+So I grabbed the fixed fork as something I can at least keep working. Everything below is from the original author.
+
+## Original Readme
 
 > Share/publish private packages using Git remotes!
 
@@ -34,7 +43,7 @@ it is currently designed in the following way:
   ](https://www.git-scm.com/docs/gitcredentials).
 
 * **Intermediate Pack:** In order to provide better compatibility/parity with
-  conventional publishing, `npm-git-publish` actually invokes the official
+  conventional publishing, `npm5-git-publish` actually invokes the official
   `npm pack` to create an intermediate tarball and then uses its contents to
   populate the Git-based release.
 
@@ -52,13 +61,13 @@ it is currently designed in the following way:
 Typically you would use this package as a library, as part of your dev scripts.
 
 ```
-npm install -D npm-git-publish
+npm install -D npm5-git-publish
 ```
 
 ## API
 
 ```
-import publish from 'npm-git-publish';
+import publish from 'npm5-git-publish';
 
 publish(packageDir, gitRemoteUrl [, options] )
     .then(result => {
