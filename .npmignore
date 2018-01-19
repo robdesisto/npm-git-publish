@@ -6,3 +6,6 @@
 /test/
 /tsconfig.json
 /typings.json
+/.idea/
+.editorconfig
+package-lock.json
