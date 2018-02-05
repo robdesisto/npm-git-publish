@@ -9,3 +9,5 @@
 /.idea/
 .editorconfig
 package-lock.json
+/.git/
+/node_modules/
